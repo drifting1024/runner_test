@@ -1,12 +1,17 @@
 on: push
 jobs:
-  job1:
+  pwd_ls:
     runs-on: ubuntu-latest
+
     steps:
-    - run: pwd
+    - name: 查看工作路径
+      run: pwd
+
+    - name: 打印
     - run: ls
   job2:
     runs-on: windows-latest
     steps:
-    - run: node --version
+    - name: 查看node版本
+      run: node --version
 
