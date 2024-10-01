@@ -8,7 +8,7 @@ jobs:
       run: pwd
 
     - name: 打印
-    - run: ls
+      run: ls
   job2:
     runs-on: windows-latest
     steps:
